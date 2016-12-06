@@ -10,7 +10,6 @@ bool isPalindrom(CNode *head) {
   }
 
   int mid = size / 2;
-
   for (int i = 0; i < mid; i++) {
     if (head[i].data != head[size - 1 - i].data)
       return false;
