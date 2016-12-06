@@ -8,6 +8,7 @@ bool isPalindrom(CNode *head) {
     size++;
     node = node->next;
   }
+
   int mid = size / 2;
   for (int i = 0; i < mid; i++) {
     if (head[i].data != head[size - 1 - i].data)

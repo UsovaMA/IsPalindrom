@@ -3,4 +3,5 @@ struct CNode {
   CNode* next;
   CNode(int x = 0) : data(x), next(0) {}
 };
+
 bool isPalindrom(CNode *node);
