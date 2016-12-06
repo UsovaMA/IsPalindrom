@@ -17,7 +17,6 @@ TEST(Palindrom, NotPalindrom) {
     nodes[i].next = &(nodes[i + 1]);
     nodes[i].data = i;
   }
-
   EXPECT_FALSE(isPalindrom(nodes));
 }
 
@@ -30,6 +29,5 @@ TEST(Palindrom, IsPalindrom) {
     nodes[i].data = data_s[i];
   }
   nodes[size - 1] = data_s[size - 1];
-
   EXPECT_TRUE(isPalindrom(nodes));
 }
